@@ -40,10 +40,3 @@ sidebarLis[3].addEventListener("mouseout", function(){
     this.children[0].children[0].children[0].style.display = "none";
     this.style.transitionDuration = "0.5s";
 });
-
-//DOCUMENT LISTENER
-if(window.matchMedia("(min-width: 771px)").matches){
-    close();
-    toggle = 0;
-}
-// console.log(sidebar.children[0].children[1].className);
