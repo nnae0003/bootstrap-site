@@ -3,7 +3,6 @@ var sidebar = document.getElementById('sidebar');
 var hamburger = document.getElementById('hamburger');
 var sidebarLis = sidebar.children[0].children;
 var btn_close = document.getElementById('close');
-// var navbar = document.getElementById('main-nav');
 
 var open = function(){
     sidebar.style.transform = "translateX(0)";
@@ -14,19 +13,6 @@ var close = function(){
     sidebar.style.transform = "translateX(-200px)";
     toggle--;
 }
-
-// MAIN NAVBAR LISTENER
-// var lists = navbar.children[2].children[0].children;
-//
-// for(var j = 0; j < lists.length; ++j){
-//     console.log(lists[j]);
-//     lists[j].addEventListener("click", function(){
-//         for(var i = 0; i < lists.length; ++i){
-//             lists[i].className = lists[i].className.replace("active", "");
-//         }
-//         this.className += " active"
-//     });
-// }
 
 // HAMBURGER LISTENERS
 hamburger.addEventListener("click",  function(){
@@ -42,17 +28,6 @@ hamburger.addEventListener("click",  function(){
 btn_close.addEventListener("click", function(){
     close();
 });
-
-// LISTENERS FOR SIDEBAR NAVIGATION
-for(var i = 0; i < sidebarLis.length-1; ++i){
-    sidebarLis[i].addEventListener("mouseover", function(){
-        this.className = this.className.replace("bg-info", "bg-primary");
-    });
-
-    sidebarLis[i].addEventListener("mouseout", function(){
-        this.className = this.className.replace("bg-primary", "bg-info");
-    });
-}
 
 sidebarLis[3].addEventListener("mouseover", function(){
     this.style.width = "300px";
