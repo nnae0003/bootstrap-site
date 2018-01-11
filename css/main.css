@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya|Catamaran');
+
+/* BODY */
+body{
+    font-family: 'Catamaran', sans-serif;
+}
+
+/* HEADINGS */
+.title{
+    font-family: 'Alegreya', serif;
+    text-align: center;
+}
+
+/* HEADER */
+header{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* TITLE IN ROW */
+.row .title{
+    text-align: left;
+}
+
+/* BUTTONS */
+.btn{
+    background-color: #CFB368;
+    color: #FFFFFF;
+}
+
+/* JUMBOTRON */
+.jumbotron{
+    background: url("../img/bg-grass.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% auto;
+    color: white;
+    margin: 0;
+}
+
+/* CV */
+.row{
+    color: white;
+    margin: 0;
+}
+
+.container{
+    padding: 15px;
+    /* align-items: center; */
+}
+
+/* HAMBURGER MENU */
+.hamburger{
+    height: 100%;
+    width: auto;
+    display: none;
+}
+
+/* SVGS */
+svg{
+    width: 30px;
+    height: 30px;
+}
+
+ svg line{
+    stroke: white;
+    stroke-width: 2px;
+}
+
+#search line{
+    stroke-width: 3px;
+}
+
+/* MAIN NAVIGATION */
+#main-nav, .btn.search{
+    background-color: #81604E;
+}
+
+#main-nav .navbar-brand{
+    color: #CFB368;
+}
+
+/* SIDE NAVIGATION */
+.sidebar{
+    width: 200px;
+    height: 300px;
+    position: fixed;
+    top: 60px;
+    /* box-shadow: 0 5px 20px 5px; */
+    transform: translate(-250px, 0);
+}
+
+.sidebar ul{
+    height: 100%;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar ul li{
+    background-color: #81604E;
+    flex-basis: 25%;
+    display: block;
+    text-align: center;
+    padding-top: 15px;
+    border: 1px solid grey;
+}
+
+.sidebar ul li:last-child{
+    padding: 0;
+}
+
+.sidebar ul li:last-child input{
+    display: none;
+}
+
+.sidebar ul li:last-child form{
+    display: flex;
+    justify-content: center;
+}
+
+.sidebar div{
+    width: 100%;
+    margin: 15px 0;
+}
+
+.sidebar ul li a{
+    color: white;
+}
+
+.sidebar form input{
+    width: 200px;
+}
+
+.sidebar .close{
+    margin: 0;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 2px;
+    right: 0px;
+}
+
+/* FOOTER */
+footer{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    background-color: #AF8E58;
+    color: #FFFFFF;
+}
+
+footer p{
+    padding: 20px 20px 0 20px;
+}
+
+/* SUB NAVIGATION */
+.subnav {
+    width: 60%;
+    height: 100%;
+    margin: 0 35px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.subnav  ul{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.subnav  ul li{
+    flex-basis: 25%;
+    height: 100%;
+}
+
+.subnav  ul li:hover{
+    opacity: 0.7;
+}
+
+.subnav ul li a{
+    padding-top: 20px;
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+/* THINGS TO DO */
+/* CARD */
+.card{
+    /* width: 270px; */
+    background-color: #AF8E58;
+}
+
+.main.container{
+    background-color: #FFFFFF;
+}
+
+.main.container ul{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.main.container ul li{
+    padding: 15px;
+}
+
+/* BODY */
+.bg{
+    background: url("../img/bg-grass.jpg");
+}
+
+/* CONTACT */
+.map-header .img{
+    display: flex;
+    justify-content: center;
+}
+
+.contact-us{
+    background-color: #987654;
+    color: white;
+    background-attachment: fixed;
+}
+
+    /* QUERIES */
+@media only screen and (max-width: 770px) {
+    .jumbotron{
+        background-repeat: repeat-y;
+    }
+
+    .sidebar{
+        box-shadow: 0 5px 20px 5px;
+        transform: translate(-200px, 0);
+        z-index: 20;
+    }
+
+    .hamburger{
+        display: inline-block;
+    }
+
+    #navbar-links{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 600px)  and (max-width: 1000px){
+    .main.container ul li{
+        flex-basis: 50%;
+    }
+}
+
+@media only screen and (min-width: 1001px)  and (max-width: 1400px){
+    .main.container ul li{
+        flex-basis: 33%;
+    }
+}
+
+@media only screen and (min-width: 1401px){
+    .main.container ul li{
+        flex-basis: 25%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .map-header .img{
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,7 @@
+contact-us: #987654;
+nav: #81604E;
+buttons: #CFB368;
+footer: #AF8E58;
+brand: #CFB368;
+white: #FFFFFF;
+cards: #AF8E58;
