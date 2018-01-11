@@ -119,6 +119,10 @@ svg{
     justify-content: center;
 }
 
+.sidebar ul li:hover{
+    background-color: #CFB368;
+}
+
 .sidebar div{
     width: 100%;
     margin: 15px 0;
